@@ -1,6 +1,8 @@
 
 Projeto feito em React.js para buscar e visualizar informações de perfis do GitHub de forma rápida e prática.
 
+Hospedado em : [SearchGitHubProfile](https://search-github-profile-beta.vercel.app/)
+
 📸 Preview
 
 ![Preview do projeto](./public/github.png)
