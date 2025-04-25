@@ -1,6 +1,7 @@
 import { useState } from 'react'
-
 import './App.css'
+import logo from './assets/logo.png';
+import { Search } from 'lucide-react';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -29,12 +30,17 @@ function App() {
 return (
   <div className='app'>
     <div className='card'>
-      <h1 className='title'>Perfil GitHub</h1>
+      <h1 className='title'> <img src={logo} alt="logo" />
+        Perfil GitHub</h1>
+
       <div className='search-box'>
         <input type="text" placeholder="Digite um usuário do Github" value={username}
         onChange={(e) => setUsername(e.target.value)}/>
-        <button onClick={handleSearch}>Buscar</button>
+        <button onClick={handleSearch}>
+          <Search color='white' size={20} />
+        </button>
       </div>
+      
       {loading && <p className="info">Carregando...</p>}
         {error && <p className="error">{error}</p>}
         {userData && (

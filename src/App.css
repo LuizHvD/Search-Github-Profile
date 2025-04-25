@@ -1,33 +1,37 @@
+
 .app {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #141D2F;
   padding: 20px;
 }
 
 
 .card {
-  background-color: #1E2A47;
-  padding: 30px;
-  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3) ;
+  padding: 30px 176px 50px 176px;
   max-width: 600px;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  
 }
 
+.title img{
+  margin-right: 11px;
+}
 
 .title {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 27px;
+  text-align: center;
 }
 
 
 .search-box {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
 }
 
 
@@ -37,24 +41,14 @@
   border: none;
   border-radius: 10px 0 0 10px;
   font-size: 16px;
-  background-color: #1E2A47;
-  color: white;
-  border: 1px solid #0079ff;
-}
-
-
-.search-box input::placeholder {
-  color: #ccc;
+  color: black;
 }
 
 
 .search-box button {
   padding: 12px 20px;
   border: none;
-  background-color: #0079ff;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
+  background-color: #005CFF;
   border-radius: 0 10px 10px 0;
   cursor: pointer;
   transition: background 0.3s;
@@ -74,10 +68,10 @@
 
 
 .error {
-  color: #f87171;
-  background-color: #fef2f2;
-  padding: 10px;
-  border-radius: 8px;
+  color: #FF0000;
+  background-color: #D9D9D9;
+  padding: 17px;
+  border-radius: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
@@ -87,29 +81,34 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 33px;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  padding: 20px;
 }
 
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  border: 3px solid #0079ff;
+  border: 2px solid #005CFF;
 }
 
-
+.info-box{
+  margin-left: 20px;
+}
 .info-box h2 {
   margin: 0;
   font-size: 20px;
   font-weight: 700;
-  color: white;
+  color: #005CFF;
 }
 
 
 .info-box p {
-  margin: 5px 0 0;
-  color: #cbd5e1;
-  font-size: 14px;
+  margin: 16px 0 0 0;
+  color: black;
+  font-size: 15px;
   line-height: 1.5;
 }
