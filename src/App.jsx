@@ -26,7 +26,29 @@ function App() {
     }
   };
 
-  
+return (
+  <div className='app'>
+    <div className='card'>
+      <h1 className='title'>Perfil GitHub</h1>
+      <div className='search-box'>
+        <input type="text" placeholder="Digite um usuário do Github" value={username}
+        onChange={(e) => setUsername(e.target.value)}/>
+        <button onClick={handleSearch}>Buscar</button>
+      </div>
+      {loading && <p className="info">Carregando...</p>}
+        {error && <p className="error">{error}</p>}
+        {userData && (
+          <div className="profile">
+            <img className="avatar" src={userData.avatar_url} alt={userData.name} />
+            <div className="info-box">
+              <h2>{userData.name || userData.login}</h2>
+              <p>{userData.bio || 'Este usuário não possui bio.'}</p>
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  );
 
-}
+};
 export default App

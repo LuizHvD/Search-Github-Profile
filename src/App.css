@@ -1,42 +1,115 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141D2F;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: #1E2A47;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+  background-color: #1E2A47;
+  color: white;
+  border: 1px solid #0079ff;
+}
+
+
+.search-box input::placeholder {
+  color: #ccc;
+}
+
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #0079ff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.search-box button:hover {
+  background-color: #60abff;
+}
+
+
+.info {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+
+.error {
+  color: #f87171;
+  background-color: #fef2f2;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.profile {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #0079ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.info-box h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
+.info-box p {
+  margin: 5px 0 0;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
 }
