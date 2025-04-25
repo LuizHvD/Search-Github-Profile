@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: black;
+    gap: 20px;
+    text-align: left;
+}
